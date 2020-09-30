@@ -1,0 +1,427 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://main/board-fgp.png" type="Texture" id=1]
+[ext_resource path="res://main/rollbutton.gd" type="Script" id=2]
+[ext_resource path="res://main/d6.png" type="Texture" id=3]
+[ext_resource path="res://main/d2.png" type="Texture" id=4]
+[ext_resource path="res://main/d1.png" type="Texture" id=5]
+[ext_resource path="res://main/d4.png" type="Texture" id=6]
+[ext_resource path="res://main/d3.png" type="Texture" id=7]
+[ext_resource path="res://main/d5.png" type="Texture" id=8]
+[ext_resource path="res://main/car2.png" type="Texture" id=9]
+[ext_resource path="res://main/car1.png" type="Texture" id=10]
+[ext_resource path="res://main/board.gd" type="Script" id=11]
+[ext_resource path="res://main/roll.png" type="Texture" id=12]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="board" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 11 )
+
+[node name="car1_1" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1490.58, 190.916 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_1" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1480.68, 296.982 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_2" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1247.33, 190.916 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_2" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1237.43, 296.982 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_3" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1012.57, 199.401 )
+rotation = -1.65806
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_3" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1002.67, 305.467 )
+rotation = -1.65806
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_4" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 851.352, 547.297 )
+rotation = 2.44346
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_4" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 920.648, 486.487 )
+rotation = 2.44346
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_5" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 820.239, 700.033 )
+rotation = -1.22173
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_5" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 807.511, 806.099 )
+rotation = -1.22173
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_6" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 585.48, 544.469 )
+rotation = -1.22173
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_6" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 569.923, 642.05 )
+rotation = -1.22173
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_7" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 280.01, 510.528 )
+rotation = -2.79253
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_7" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 354.963, 568.511 )
+rotation = -2.79253
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_8" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 212.127, 844.282 )
+rotation = 3.14159
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_8" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 309.708, 828.727 )
+rotation = 3.14159
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_9" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 217.784, 1081.87 )
+rotation = 3.14159
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_9" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 321.022, 1071.97 )
+rotation = 3.14159
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_10" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 237.583, 1344.91 )
+rotation = 2.61799
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_10" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 318.194, 1281.28 )
+rotation = 2.61799
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_11" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 579.823, 1364.71 )
+rotation = 0.261799
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_11" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 504.87, 1315.22 )
+rotation = 0.261799
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_12" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 789.126, 1214.81 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_12" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 810.34, 1097.43 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_13" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1038.03, 1214.81 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_13" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1059.24, 1097.43 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_14" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1278.44, 1211.98 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_14" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1299.66, 1094.6 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_15" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1527.35, 1214.81 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_15" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1548.56, 1097.43 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_16" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1764.93, 1214.81 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_16" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 1786.15, 1097.43 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_17" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2008.18, 1217.63 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_17" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2029.39, 1100.26 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_18" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2228.8, 1220.46 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_18" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2250.01, 1103.08 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_19" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2474.87, 1223.29 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_19" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2496.08, 1105.91 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_20" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2695.49, 1214.81 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_20" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2716.7, 1097.43 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_21" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2983.98, 1016.82 )
+rotation = -0.174533
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_21" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2897.72, 1055 )
+rotation = 0.174533
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_22" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2732.26, 821.655 )
+rotation = -1.0472
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_22" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2699.73, 916.41 )
+rotation = -1.0472
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_23" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2551.24, 615.18 )
+rotation = -0.523599
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_23" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2473.46, 681.65 )
+rotation = -0.523599
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_24" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2415.47, 374.764 )
+rotation = -0.523599
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_24" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2329.21, 441.234 )
+rotation = -0.523599
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_25" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2087.37, 185.259 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_25" type="Sprite" parent="board"]
+visible = false
+position = Vector2( 2091.62, 288.499 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="car1_26" type="Sprite" parent="board"]
+position = Vector2( 1841.3, 188.087 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 10 )
+
+[node name="car2_26" type="Sprite" parent="board"]
+position = Vector2( 1868.17, 294.156 )
+rotation = -1.5708
+scale = Vector2( 0.2, 0.3 )
+texture = ExtResource( 9 )
+
+[node name="rollbutton" type="TextureButton" parent="board"]
+margin_left = 2885.01
+margin_top = 326.125
+margin_right = 3397.01
+margin_bottom = 838.125
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 12 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d1" type="Sprite" parent="board/rollbutton"]
+visible = false
+texture = ExtResource( 5 )
+centered = false
+
+[node name="d2" type="Sprite" parent="board/rollbutton"]
+visible = false
+texture = ExtResource( 4 )
+centered = false
+
+[node name="d3" type="Sprite" parent="board/rollbutton"]
+visible = false
+texture = ExtResource( 7 )
+centered = false
+
+[node name="d4" type="Sprite" parent="board/rollbutton"]
+visible = false
+texture = ExtResource( 6 )
+centered = false
+
+[node name="d5" type="Sprite" parent="board/rollbutton"]
+visible = false
+texture = ExtResource( 8 )
+centered = false
+
+[node name="d6" type="Sprite" parent="board/rollbutton"]
+visible = false
+texture = ExtResource( 3 )
+centered = false
+[connection signal="pressed" from="board/rollbutton" to="board/rollbutton" method="on_pressed"]
