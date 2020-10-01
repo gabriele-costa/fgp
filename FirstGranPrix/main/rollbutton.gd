@@ -25,6 +25,9 @@ func on_pressed():
 	# STEP 3: move player car on the board
 	yield(move_car(steps), "completed")
 	
+	if gameover():
+		 get_tree().change_scene("res://end/end.tscn")
+	
 	# STEP 4: swap turn
 	swap()
 	
@@ -61,3 +64,7 @@ func swap():
 	if Model.penalty[Model.turn] > 0:
 		Model.penalty[Model.turn] -= 1
 		swap() # Recursive function!
+
+# ruturns true when the race is over
+func gameover():
+	return Model.tile[Model.RED] >= Model.NTILES or Model.tile[Model.BLUE] >= Model.NTILES  

@@ -3,6 +3,7 @@ extends Node
 # constants
 const RED = 0 
 const BLUE = 1
+const NTILES = 26
 
 # variables
 var turn = RED      # First player is RED
