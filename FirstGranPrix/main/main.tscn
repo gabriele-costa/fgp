@@ -386,8 +386,8 @@ texture = ExtResource( 9 )
 [node name="rollbutton" type="TextureButton" parent="board"]
 margin_left = 2885.01
 margin_top = 326.125
-margin_right = 3397.01
-margin_bottom = 838.125
+margin_right = 3399.01
+margin_bottom = 840.125
 rect_scale = Vector2( 0.5, 0.5 )
 texture_normal = ExtResource( 12 )
 script = ExtResource( 2 )
@@ -423,5 +423,19 @@ centered = false
 [node name="d6" type="Sprite" parent="board/rollbutton"]
 visible = false
 texture = ExtResource( 3 )
+centered = false
+
+[node name="turn_node" type="Node2D" parent="board"]
+position = Vector2( 688.823, 1480.78 )
+
+[node name="turn_car1" type="Sprite" parent="board/turn_node"]
+scale = Vector2( 0.4, 0.6 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="turn_car2" type="Sprite" parent="board/turn_node"]
+visible = false
+scale = Vector2( 0.4, 0.6 )
+texture = ExtResource( 9 )
 centered = false
 [connection signal="pressed" from="board/rollbutton" to="board/rollbutton" method="on_pressed"]
