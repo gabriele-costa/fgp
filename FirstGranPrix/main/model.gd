@@ -16,9 +16,10 @@ var rng = RandomNumberGenerator.new()
 func _ready():
 	rng.randomize() # this is to initialize the RNG using system clock
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _reset():
+	turn = RED
+	tile = [0,0]
+	penalty = [0,0]
 
 func has_penalty(player):
 	return penalty[player] > 0

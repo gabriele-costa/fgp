@@ -5,6 +5,7 @@ const pen_turns = [2,1]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Model.reset()
 	pass # Replace with function body.
 
 func move_car(steps):

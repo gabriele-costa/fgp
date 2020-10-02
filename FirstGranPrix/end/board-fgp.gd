@@ -9,7 +9,7 @@ extends Sprite
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var winner = Model.turn
-	if winner == 0:
+	if winner == Model.RED:
 		get_node("redw").visible = true
 	else:
 		get_node("bluew").visible = true

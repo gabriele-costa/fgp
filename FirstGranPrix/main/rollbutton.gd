@@ -26,7 +26,8 @@ func on_pressed():
 	yield(move_car(steps), "completed")
 	
 	if gameover():
-		 get_tree().change_scene("res://end/end.tscn")
+		get_tree().change_scene("res://end/end.tscn")
+		return
 	
 	# STEP 4: swap turn
 	swap()
