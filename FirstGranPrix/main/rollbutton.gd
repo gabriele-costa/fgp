@@ -1,10 +1,9 @@
 extends TextureButton
 
 # Animation constants
-const car_delay = 1.5
+const car_delay = 3
 const roll_delay = 0.1
-const rolls = 10
-const epsilon = 0.2
+const rolls = 20
 
 # alternative: onready var dice = get_children()
 var dice
@@ -20,9 +19,11 @@ func on_pressed():
 	var steps = Model.roll()
 	
 	# STEP 2: play dice animation
+	get_node("rollsound").play()
 	yield(dice_animation(steps - 1), "completed")
 	
 	# STEP 3: move player car on the board
+	get_node("carsound").play()
 	yield(move_car(steps), "completed")
 	
 	if gameover():

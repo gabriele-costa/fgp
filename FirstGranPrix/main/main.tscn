@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://main/board-fgp.png" type="Texture" id=1]
 [ext_resource path="res://main/rollbutton.gd" type="Script" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://main/car1.png" type="Texture" id=10]
 [ext_resource path="res://main/board.gd" type="Script" id=11]
 [ext_resource path="res://main/roll.png" type="Texture" id=12]
+[ext_resource path="res://main/car.wav" type="AudioStream" id=13]
+[ext_resource path="res://main/roll.wav" type="AudioStream" id=14]
 
 [node name="Node2D" type="Node2D"]
 
@@ -424,6 +426,12 @@ centered = false
 visible = false
 texture = ExtResource( 3 )
 centered = false
+
+[node name="rollsound" type="AudioStreamPlayer" parent="board/rollbutton"]
+stream = ExtResource( 14 )
+
+[node name="carsound" type="AudioStreamPlayer" parent="board/rollbutton"]
+stream = ExtResource( 13 )
 
 [node name="turn_node" type="Node2D" parent="board"]
 position = Vector2( 688.823, 1480.78 )
