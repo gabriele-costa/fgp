@@ -16,7 +16,7 @@ var rng = RandomNumberGenerator.new()
 func _ready():
 	rng.randomize() # this is to initialize the RNG using system clock
 
-func _reset():
+func reset():
 	turn = RED
 	tile = [0,0]
 	penalty = [0,0]
